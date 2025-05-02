@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Layout HTML5 - Iframe</title>
+  <style>
+    body {
+      margin: 0;
+      font-family: Georgia, 'Times New Roman', Times, serif;
+      display: flex;
+      height: 100vh;
+    }
+    nav {
+      width: 25%;
+      background-color: #4dc91c;
+      padding: 20px;
+    }
+    iframe {
+      width: 75%;
+      border: none;
+      height: 100vh;
+    }
+    a {
+      display: block;
+      margin: 10px 0;
+      text-decoration: none;
+      color: #ffffff;
+    }
+
+    h2 {
+      color: white;
+    }
+
+    a:hover {
+      color: green;
+    }
+  </style>
+</head>
+<body>
+
+  <nav>
+    <h2>Menu</h2>
+    <a href="konten.html" target="contentFrame">Beranda</a>
+    <a href="profile.html" target="contentFrame">Profil</a>
+    <a href="contact.html" target="contentFrame">Kontak</a>
+  </nav>
+
+  <iframe name="contentFrame" src="konten.html"></iframe>
+
+</body>
+</html>
